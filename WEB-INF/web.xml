@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Annuaire</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+      <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglib.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
+
+  <servlet>
+    <description></description>
+    <display-name>Controleur</display-name>
+    <servlet-name>Controleur</servlet-name>
+    <servlet-class>com.annuaire.servlet.Controleur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Controleur</servlet-name>
+    <url-pattern>/Controleur</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreerContact</display-name>
+    <servlet-name>CreerContact</servlet-name>
+    <servlet-class>com.annuaire.servlet.CreerContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreerContact</servlet-name>
+    <url-pattern>/CreerContact</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ModifierContact</display-name>
+    <servlet-name>ModifierContact</servlet-name>
+    <servlet-class>com.annuaire.servlet.ModifierContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifierContact</servlet-name>
+    <url-pattern>/ModifierContact</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SupprimerContact</display-name>
+    <servlet-name>SupprimerContact</servlet-name>
+    <servlet-class>com.annuaire.servlet.SupprimerContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SupprimerContact</servlet-name>
+    <url-pattern>/SupprimerContact</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RechercherContact</display-name>
+    <servlet-name>RechercherContact</servlet-name>
+    <servlet-class>com.annuaire.servlet.RechercherContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RechercherContact</servlet-name>
+    <url-pattern>/RechercherContact</url-pattern>
+  </servlet-mapping>
+  
+
+</web-app>
+
+
+
